@@ -1,5 +1,5 @@
-##Sprint 3 - Computational Thinking With Python</br>
-#Integrantes: </br>
+## Sprint 3 - Computational Thinking With Python </br>
+# Integrantes: </br>
 - Matheus Ricardo - RM560099
 - Filip Arnhold - RM559294
 - Davi Correa - RM560438
@@ -7,7 +7,7 @@
 - Marcos Vinícius - RM560062
 
 
-#OmniStock - Sistema de Controle de Estoque de Medicamentos </br>
+# OmniStock - Sistema de Controle de Estoque de Medicamentos </br>
 
 O projeto consiste no protótipo de um sistema de gerenciamento de estoque de medicamentos que permite, através da autenticação de usuários de privilégio suficientemente elevado, observar, alterar, remover ou adicionar medicamentos armazenados em locais—ou gavetas—reservados. </br>
 
