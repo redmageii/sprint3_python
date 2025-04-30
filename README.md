@@ -1,5 +1,5 @@
 # Sprint 3 - Computational Thinking With Python </br>
-Projeto acadêmico realizado em conformidade com requisitos especificados pelo docente na disciplina de Computational Thinking With Python, na turma 1ESPB do curso de Engenharia de Software.
+Projeto acadêmico realizado em conformidade com requisitos especificados pelo docente da disciplina de Computational Thinking With Python para o projeto Challenge, realizado em conjunto com o Hospital Infantil Sabará, na turma 1ESPB do curso de Engenharia de Software.
 ## Integrantes: </br>
 - Matheus Ricardo - RM560099
 - Filip Arnhold - RM559294
