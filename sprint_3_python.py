@@ -30,7 +30,6 @@ usuarios = {
     'carlos': ['ca123456rlos', 'Carlos']
 }
 
-
 def forca_opcao(lista, msg, msg_erro):
     opt = input(msg)
     print(opt)
@@ -40,7 +39,6 @@ def forca_opcao(lista, msg, msg_erro):
         print(msg_erro)
         return forca_opcao(lista, msg, msg_erro)
 
-
 def check_num(msg, msg_erro):
     num = input(msg)
     if num.isnumeric():
@@ -48,7 +46,6 @@ def check_num(msg, msg_erro):
     else:
         print(msg_erro)
         return check_num(msg, msg_erro)
-
 
 def cadastrar_usuario():
     username = input('Insira seu nome de usuário: ').lower()
@@ -68,7 +65,6 @@ def cadastrar_usuario():
     print(f'Seja bem-vindo(a), {nome}!')
     return nome
 
-
 def autenticar_usuario():
     erro = 'Nome ou senha incorretos.'
     username = input('Insira seu nome de usuário: ').lower()
@@ -84,7 +80,6 @@ def autenticar_usuario():
         return autenticar_usuario()
     return usuarios[username][1]
 
-
 def status():
     for key in medicamentos.keys():
         print(f'=========={key}==========')
@@ -98,7 +93,6 @@ def status():
             print('STATUS: OK')
         print('\n')
     return
-
 
 def cadastrar_item():
     while True:
@@ -118,7 +112,6 @@ def cadastrar_item():
         break
     return medicamento
 
-
 def remover_item():
     if len(medicamentos.keys()) > 0:
         print('\n'.join(medicamentos.keys()))
@@ -128,7 +121,6 @@ def remover_item():
         return print(f'{item} removido')
     else:
         print('Lista vazia.\nRetornando...')
-
 
 def alterar_item():
     joined_medicamentos='\n'.join(medicamentos.keys())
@@ -148,7 +140,6 @@ def alterar_item():
             medicamentos[item][categoria] = int(inpt)
     return
 
-
 opcoes_login = {
     '1': autenticar_usuario,
     '2': cadastrar_usuario
@@ -161,8 +152,7 @@ opcoes_estoque = {
     '4': remover_item
 }
 
-print(
-    '(c) OmniSystem. Todos os direitos reservados.\nBem-vindo ao sistema OmniStock ver. 1.123581321.\nPor favor, insira suas informações para login ou cadastre um usuário.')
+print('(c) OmniSystem. Todos os direitos reservados.\nBem-vindo ao sistema OmniStock ver. 1.123581321.\nPor favor, insira suas informações para login ou cadastre um usuário.')
 print('1 - Autenticar usuário\n2 - Cadastrar usuário')
 nome = opcoes_login[forca_opcao(opcoes_login.keys(), 'Selecione uma opção:', 'Opção inválida.')]()
 while True:
@@ -175,7 +165,3 @@ while True:
     else:
         print('Encerrando...')
         break
-
-
-
-
