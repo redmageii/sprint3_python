@@ -1,5 +1,5 @@
-## Sprint 3 - Computational Thinking With Python </br>
-# Integrantes: </br>
+# Sprint 3 - Computational Thinking With Python </br>
+## Integrantes: </br>
 - Matheus Ricardo - RM560099
 - Filip Arnhold - RM559294
 - Davi Correa - RM560438
