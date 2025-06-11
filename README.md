@@ -1,4 +1,4 @@
-# Sprint 3 - Computational Thinking With Python </br>
+# Sprint 4 - Computational Thinking With Python </br>
 Projeto acadêmico realizado em conformidade com requisitos especificados pelo docente da disciplina de Computational Thinking With Python para o projeto Challenge, realizado em conjunto com o Hospital Infantil Sabará, na turma 1ESPB do curso de Engenharia de Software.
 ## Integrantes: </br>
 - Matheus Ricardo - RM560099
@@ -18,3 +18,5 @@ Inicialmente, o sistema irá requisitar que a autenticação de usuário seja fe
 - Alterar a categoria especificada de um ou mais medicamentos. </br>
 - Remoção de algum medicamento e todas as informações armazenadas. </br>
 
+# Aprimoramentos na Sprint 4 </br>
+- Foram adicionadas exceções de erro a algumas funções do código original
