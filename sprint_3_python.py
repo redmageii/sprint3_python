@@ -40,10 +40,9 @@ def forca_opcao(lista, msg, msg_erro):
         return forca_opcao(lista, msg, msg_erro)
 
 def check_num(msg, msg_erro):
-    num = input(msg)
-    if num.isnumeric():
-        return int(num)
-    else:
+    try:
+        opt=int(input(msg))
+    except:
         print(msg_erro)
         return check_num(msg, msg_erro)
 
