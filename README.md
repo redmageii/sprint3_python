@@ -20,4 +20,4 @@ Inicialmente, o sistema irá requisitar que a autenticação de usuário seja fe
 
 # Aprimoramentos na Sprint 4 </br>
 - Foram adicionadas exceções de erro a algumas funções do código original
-- Alteração de estruturas de dados que antes eram listas para tuplas
+- Alteração de algumas estruturas de dados que antes eram listas para tuplas para manter integridade dos itens
