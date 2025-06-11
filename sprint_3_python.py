@@ -41,8 +41,8 @@ def forca_opcao(lista, msg, msg_erro):
 
 def check_num(msg, msg_erro):
     try:
-        opt=int(input(msg))
-    except:
+        return int(input(msg))
+    except ValueError:
         print(msg_erro)
         return check_num(msg, msg_erro)
 
@@ -159,8 +159,8 @@ while True:
     print(
         f'=================================\n1 - Status do estoque\n2 - Cadastro de medicamentos\n3 - Alterar item\n4 - Remover item\n5 - Sair')
     opt = forca_opcao(['1', '2', '3', '4', '5'], 'Selecione uma opção: ', 'Opção inválida.')
-    if opt in opcoes_estoque.keys():
+    try:
         opcoes_estoque[opt]()
-    else:
-        print('Encerrando...')
+    except KeyError:
+        print('Saindo...')
         break
