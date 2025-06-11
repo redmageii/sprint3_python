@@ -7,8 +7,8 @@ medicamentos = {
                              'localização': 'B1'}
 }
 
-classes = ['antibiótico', 'analgésico', 'antipirético', 'antidepressivo', 'antialérgico', 'antivirótico',
-           'antidiabético', 'cardiovascular']
+classes = ('antibiótico', 'analgésico', 'antipirético', 'antidepressivo', 'antialérgico', 'antivirótico',
+           'antidiabético', 'cardiovascular')
 
 gavetas = {
     'antibiótico': 'A1',
@@ -21,13 +21,13 @@ gavetas = {
     'cardiovascular': 'C2'
 }
 
-unidades = ['ml', 'mg', 'g']
+unidades = ('ml', 'mg', 'g')
 
 usuarios = {
-    'admin': ['admin', 'Administrador'],
-    'password': ['password', 'Administrador'],
-    'tiffany': ['tiffy456', 'Tiffany'],
-    'carlos': ['ca123456rlos', 'Carlos']
+    'admin': ('admin', 'Administrador'),
+    'password': ('password', 'Administrador'),
+    'tiffany': ('tiffy456', 'Tiffany'),
+    'carlos': ('ca123456rlos', 'Carlos')
 }
 
 def forca_opcao(lista, msg, msg_erro):
@@ -60,7 +60,7 @@ def cadastrar_usuario():
             print('Senhas incompatíveis. Insira os campos novamente.')
     nome = input('Insira seu nome: ').title()
     # adição à lista de usuários
-    usuarios[username] = [senha, nome]
+    usuarios[username] = (senha, nome)
     print(f'Seja bem-vindo(a), {nome}!')
     return nome
 
