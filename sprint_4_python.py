@@ -1,3 +1,10 @@
+#Matheus Ricardo - RM560099
+#Filip Arnhold - RM559294
+#Davi Correa - RM560438
+#Marcos Azuma - RM559883
+#Marcos Vinícius - RM560062
+
+#lista de medicamentos contendo informações importantes, como classe, pesos, etc
 medicamentos = {
     'Paracetamol 500mg': {'quantidade': 50, 'dosagem': '500mg', 'peso_unitario(mg)': 800, 'classe': 'analgésico',
                           'localização': 'A1'},
@@ -10,6 +17,7 @@ medicamentos = {
 classes = ('antibiótico', 'analgésico', 'antipirético', 'antidepressivo', 'antialérgico', 'antivirótico',
            'antidiabético', 'cardiovascular')
 
+#as gavetas serão associadas a uma determinada classe
 gavetas = {
     'antibiótico': 'A1',
     'analgésico': 'A2',
@@ -21,6 +29,7 @@ gavetas = {
     'cardiovascular': 'C2'
 }
 
+#o usuário terá de selecionar uma das unidades convencionais para medicamentos ao realizar o cadastro
 unidades = ('ml', 'mg', 'g')
 
 usuarios = {
@@ -93,6 +102,7 @@ def status():
         print('\n')
     return
 
+#a função de cadastro de medicamento permitirá que sejam feitos cadastros com as informações de natureza obrigatória
 def cadastrar_item():
     while True:
         medicamento = input('Insira o nome do medicamento (apenas nome): ').capitalize()
@@ -160,6 +170,7 @@ while True:
         f'=================================\n1 - Status do estoque\n2 - Cadastro de medicamentos\n3 - Alterar item\n4 - Remover item\n5 - Sair')
     opt = forca_opcao(['1', '2', '3', '4', '5'], 'Selecione uma opção: ', 'Opção inválida.')
     try:
+        #a partir de um dicionário, a função de nome correspondente será chamada ao fim da seleção obrigatória das opções existentes
         opcoes_estoque[opt]()
     except KeyError:
         print('Saindo...')
